@@ -1,0 +1,54 @@
+const artworks = [
+  {
+    filename: "2026-07-wedding-manhattan-cafe.webp",
+    title: "Wedding Manhattan Cafe",
+    tags: ["Umamusume", "Fan Art"],
+  },
+
+  {
+    filename: "2026-07-lanna_.webp",
+    title: "Lanna_",
+    tags: ["VTuber", "Fan Art"],
+  },
+
+  {
+    filename: "2025-09-lanna_.webp",
+    title: "Lanna_ with her cats",
+    tags: ["VTuber", "Fan art"],
+  },
+  {
+    filename: "2025-04-misona.webp",
+    title: "Misona",
+    tags: ["Original"],
+  },
+  {
+    filename: "2024-02-naarosse.webp",
+    title: "Naarosse",
+    tags: ["Fan Art"],
+  },
+  {
+    filename: "2023-10-ainahymy.webp",
+    title: "AinaHymy",
+    tags: ["VTuber", "Fan Art"],
+  },
+  {
+    filename: "2023-08-selen-tatsuki.webp",
+    title: "Selen Tatsuki",
+    tags: ["VTuber", "Nijisanji", "Fan Art"],
+  },
+  {
+    filename: "2023-08-fuwamoco.webp",
+    title: "FUWAMOCO",
+    tags: ["VTuber", "Hololive", "Fan Art"],
+  },
+  {
+    filename: "2023-07-nagasari-ferrea.webp",
+    title: "Nagasari Ferrea",
+    tags: ["VTuber", "Fan Art"],
+  },
+  {
+    filename: "2022-11-elira-pandora.webp",
+    title: "Elira Pandora",
+    tags: ["VTuber", "Nijisanji", "Fan Art"],
+  },
+];

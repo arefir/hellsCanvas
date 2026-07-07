@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #111;
+  color: #eee;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Header */
+
+.hero {
+  text-align: center;
+  padding: 80px 20px 50px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #aaa;
+  font-size: 1.1rem;
+}
+
+/* Contacts */
+
+.contacts {
+  margin-top: 25px;
+}
+
+.contacts a {
+  color: #ddd;
+  text-decoration: none;
+  margin: 0 12px;
+  transition: color 0.2s ease;
+}
+
+.contacts a:hover {
+  color: white;
+}
+
+/* Gallery */
+
+#gallery {
+  width: min(1400px, 90%);
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+}
+
+/* Artwork card */
+
+.art-post {
+  position: relative;
+}
+
+/* Image container */
+
+.art-image {
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 18px;
+
+  aspect-ratio: 3 / 4;
+
+  background: #1a1a1a;
+}
+
+/* Artwork image */
+
+.art-image img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: transform 0.4s ease;
+}
+
+.art-image:hover img {
+  transform: scale(1.08);
+}
+
+/* Hover title overlay */
+
+.overlay {
+  position: absolute;
+
+  bottom: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  padding: 70px 20px 25px;
+
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
+
+  color: white;
+
+  opacity: 0;
+
+  transform: translateY(20px);
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.art-image:hover .overlay {
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+.overlay h2 {
+  font-size: 1.5rem;
+
+  margin-bottom: 5px;
+}
+
+.overlay .date {
+  color: #ccc;
+
+  font-size: 0.9rem;
+}
+
+/* Description */
+
+.caption {
+  padding: 15px 5px;
+}
+
+.caption p {
+  color: #aaa;
+
+  line-height: 1.5;
+}
+
+/* Tags */
+
+.tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 10px;
+}
+
+.tags span {
+  background: #252525;
+
+  color: #bbb;
+
+  padding: 5px 12px;
+
+  border-radius: 20px;
+
+  font-size: 0.85rem;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  #gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  #gallery {
+    grid-template-columns: 1fr;
+  }
+}
