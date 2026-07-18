@@ -1,5 +1,10 @@
 const artworks = [
   {
+    filename: "2026-07-michi-mochievee.webp",
+    title: "Michi Mochievee",
+    tags: ["VTuber", "VShojo", "Fan Art"],
+  },
+  {
     filename: "2026-07-wedding-manhattan-cafe.webp",
     title: "Wedding Manhattan Cafe",
     tags: ["Umamusume", "Fan Art"],
