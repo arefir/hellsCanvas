@@ -5,17 +5,15 @@ const artworks = [
     tags: ["VTuber", "VShojo", "Fan Art"],
   },
   {
-    filename: "2026-07-wedding-manhattan-cafe.webp",
-    title: "Wedding Manhattan Cafe",
-    tags: ["Umamusume", "Fan Art"],
-  },
-
-  {
     filename: "2026-07-lanna_.webp",
     title: "Lanna_",
     tags: ["VTuber", "Fan Art"],
   },
-
+  {
+    filename: "2026-07-wedding-manhattan-cafe.webp",
+    title: "Wedding Manhattan Cafe",
+    tags: ["Umamusume", "Fan Art"],
+  },
   {
     filename: "2025-09-lanna_.webp",
     title: "Lanna_ with her cats",
