@@ -1,47 +1,48 @@
-const gallery = document.getElementById("gallery");
-import { artworkData } from "artworks.JSON";
+async function loadGallery() {
+  const gallery = document.getElementById("gallery");
+  const response = await fetch("artworks.json");
+  const artworks = await response.json();
 
-// Sort newest to oldest based on filename date
-// artworks.sort((a, b) => b.filename.localeCompare(a.filename));
-const artworks = JSON.parse(artworkData);
+  // Sort newest to oldest based on filename date
+  // artworks.sort((a, b) => b.filename.localeCompare(a.filename));
 
-const months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
 
-artworks.forEach((art) => {
-  // Extract date from filename
-  // Example: 2026-07-cafe-wedding.webp
-  const parts = art.filename.split("-");
+  artworks.forEach((art) => {
+    // Extract date from filename
+    // Example: 2026-07-cafe-wedding.webp
+    const parts = art.filename.split("-");
 
-  const year = parts[0];
-  const monthNumber = parseInt(parts[1]);
+    const year = parts[0];
+    const monthNumber = parseInt(parts[1]);
 
-  const date = `${months[monthNumber - 1]} ${year}`;
+    const date = `${months[monthNumber - 1]} ${year}`;
 
-  // Generate title if not provided
-  let title = art.title;
+    // Generate title if not provided
+    let title = art.title;
 
-  if (!title) {
-    title = parts
-      .slice(2)
-      .join(" ")
-      .replace(".webp", "")
-      .replace(/\b\w/g, (char) => char.toUpperCase());
-  }
+    if (!title) {
+      title = parts
+        .slice(2)
+        .join(" ")
+        .replace(".webp", "")
+        .replace(/\b\w/g, (char) => char.toUpperCase());
+    }
 
-  gallery.innerHTML += `
+    gallery.innerHTML += `
 
     <article class="art-post">
 
@@ -90,4 +91,7 @@ artworks.forEach((art) => {
     </article>
 
     `;
-});
+  });
+}
+
+loadGallery();
