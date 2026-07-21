@@ -1,7 +1,9 @@
 const gallery = document.getElementById("gallery");
+import { artworkData } from "artworks.JSON";
 
 // Sort newest to oldest based on filename date
 // artworks.sort((a, b) => b.filename.localeCompare(a.filename));
+const artworks = JSON.parse(artworkData);
 
 const months = [
   "January",
