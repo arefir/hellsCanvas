@@ -1,7 +1,7 @@
 const gallery = document.getElementById("gallery");
 
 // Sort newest to oldest based on filename date
-artworks.sort((a, b) => b.filename.localeCompare(a.filename));
+// artworks.sort((a, b) => b.filename.localeCompare(a.filename));
 
 const months = [
   "January",
