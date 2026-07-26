@@ -1,9 +1,25 @@
+import artworks from "../artworks.json" with { type: "json" };
+import config from "./config.json" with { type: "json" };
+import axios from "axios";
+
 const slots = ["Main", "1", "2", "3", "4"];
 
 const dynamic = [];
 
-import artworks from "../artworks.json" with { type: "json" };
-
+const months = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
+];
 slots.forEach((slot, index) => {
   const art = artworks[index];
 
