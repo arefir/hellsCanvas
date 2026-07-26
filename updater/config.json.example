@@ -1,0 +1,6 @@
+{
+  "applicationId": "YOUR_APPLICATION_ID",
+  "userId": "YOUR_USER_ID",
+  "botToken": "YOUR_BOT_TOKEN",
+  "githubPages": "https://arefir.github.io/hellsCanvas"
+}
